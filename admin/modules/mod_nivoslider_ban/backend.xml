@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<backend>
+    <module>
+        <id>mod_nivoslider_ban</id>
+        <title>Слайдер NivoSlider</title>
+    </module>
+    <params>
+        <param type="number" name="shownum" title="Количество баннеров" units="шт." default="5" />
+        <param type="list" name="effect" title="Эффект смены">
+            <option title="Случайно" value="random" />
+            <option title="sliceDown" value="sliceDown" />
+            <option title="sliceDownLeft" value="sliceDownLeft" />
+            <option title="sliceUp" value="sliceUp" />
+            <option title="sliceUpLeft" value="sliceUpLeft" />
+            <option title="sliceUpDown" value="sliceUpDown" />
+            <option title="sliceUpDownLeft" value="sliceUpDownLeft" />
+            <option title="fold" value="fold" />
+            <option title="fade" value="fade" />
+            <option title="slideInRight" value="slideInRight" />
+            <option title="slideInLeft" value="slideInLeft" />
+            <option title="boxRandom" value="boxRandom" />
+            <option title="boxRain" value="boxRain" />
+            <option title="boxRainReverse" value="boxRainReverse" />
+            <option title="boxRainGrow" value="boxRainGrow" />
+            <option title="boxRainGrowReverse" value="boxRainGrowReverse" />
+        </param>
+        <param type="number" name="slices" title="For slice animations" default="15" />
+        <param type="number" name="boxCols" title="For box animations" default="8" />
+        <param type="number" name="boxRows" title="For box animations" default="4" />
+        <param type="number" name="animSpeed" title="Slide transition speed" default="500" />
+        <param type="number" name="pauseTime" title="How long each slide will show" default="3000" />
+        <param type="flag" name="directionNav" default="on" title="Next + Prev navigation" />
+        <param type="flag" name="directionNavHide" default="on" title="Only show on hover" />
+        <param type="flag" name="controlNav" default="on" title="1,2,3... navigation" />
+        <param type="flag" name="controlNavThumbs" default="off" title="Use thumbnails for Control Nav" />
+        <param type="flag" name="pauseOnHover" default="on" title="Stop animation while hovering" />
+        <param type="flag" name="manualAdvance" default="off" title="Force manual transitions" />
+        <param type="string" name="prevText" title="Prev directionNav text" default="Prev" />
+        <param type="string" name="nextText" title="Next directionNav text" default="Next" />
+        <param type="string" name="tpl" default="mod_nivoslider_ban.tpl" />
+    </params>
+</backend>
